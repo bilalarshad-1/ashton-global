@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Ashton Global Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="./logos/website_logo.jpg">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .prose h2 {
+            color: #1e3a8a;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .prose h3 {
+            color: #1e40af;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        .prose ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.75;
+        }
+
+        .prose a {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+
+        .prose a:hover {
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- navbar -->
+    <nav class="fixed w-full bg-white backdrop-blur-sm z-50 border-b border-gray-200 font-roboto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-5 lg:px-4 py-2">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="/" class="text-indigo-500 flex justify-center items-center gap-1.5 font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-globe text-indigo-500">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                            <path d="M2 12h20" />
+                        </svg>
+                        <span class="text-3xl text-indigo-500 font-roboto">Ashton Global</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html"
+                        class="text-indigo-900 hover:text-indigo-500 transition hover:-translate-y-2 duration-300">Home</a>
+                    <a href="/index.html#about"
+                        class="text-indigo-900 hover:text-indigo-500 transition hover:-translate-y-1 duration-300">About</a>
+                    <a href="index.html#services"
+                        class="text-indigo-900 hover:text-indigo-500 transition hover:-translate-y-1 duration-300">Services</a>
+                    <a href="index.html#contact"
+                        class="text-indigo-900 hover:text-indigo-500 transition hover:-translate-y-1 duration-300">Contact</a>
+                </div>
+
+                <!-- Hamburger Menu (for mobile) -->
+                <button id="hamburgerBtn" class="md:hidden flex text-gray-700">
+                    <img id="hamburgerIcon" src="assets/icons/menu.png" class="w-6" alt="Hamburger Menu">
+                    <span id="closeIcon" class="hidden w-12 text-xl font-bold">X</span>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default, shown when hamburger is clicked) -->
+        <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-white">
+                <a href="index.html"
+                    class="block px-3 py-2 text-indigo-900 hover:text-indigo-500 transition duration-300">Home</a>
+                <a href="index.html#about"
+                    class="block px-3 py-2 text-indigo-900 hover:text-indigo-500 transition duration-300">About</a>
+                <a href="index.html#services"
+                    class="block px-3 py-2 text-indigo-900 hover:text-indigo-500 transition duration-300">Services</a>
+                <a href="index.html#contact"
+                    class="block px-3 py-2 text-indigo-900 hover:text-indigo-500 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pb-24 pt-36 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Terms of Service</h1>
+                <p class="text-xl mb-8 text-blue-100">Last Updated: March 1, 2025</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto prose prose-lg">
+                <h2>1. Introduction</h2>
+                <p>Welcome to Ashton Global Services LLC (&ldquo;Company,&rdquo; &ldquo;We,&rdquo; &ldquo;Us,&rdquo; or
+                    &ldquo;Our&rdquo;). These terms and conditions ("Terms") governs your use of our website <a
+                        href="https://ashtonglobalservices.com/">ashtonglobalservices.com</a> (the
+                    &ldquo;Website&rdquo;), and our digital services (&ldquo;Services&rdquo;). By accessing or using our
+                    Services, you (&ldquo;Client&rdquo;, &ldquo;You&rdquo;, &ldquo;Your&rdquo;) agree to be bound by
+                    these Terms. If you do not agree with any part, please do not use our Website or services.
+                </p>
+
+                <h2>2. Definitions</h2>
+                <ul>
+                    <li><strong>Client / You / Your:</strong> The user accessing the Website and/or engaging our
+                        services.</li>
+                    <li><strong>Company / We / Our / Us:</strong> Ashton Global Services LLC.
+                    </li>
+                    <li><strong>Party / Parties: </strong> Collectively, the Client and Ashton Global Services LLC.
+                    </li>
+                </ul>
+                <p>(All references to offers, acceptance, and the consideration of payment are made in accordance with
+                    applicable U.S. and Pakistani laws.)
+                </p>
+
+                <h2>3. Cookies</h2>
+                <p>We use cookies as described in our Privacy Policy. By using our Website, you consent to the use of
+                    cookies, which enable certain functionalities and may be set by third-party partners. You may manage
+                    cookies through your browser settings; note that disabling cookies may affect some features of our
+                    Service.
+                </p>
+
+                <h2>4. Intellectual Property & License</h2>
+                <p>Unless stated otherwise, Ashton Global Services LLC owns all intellectual property rights in the
+                    materials on our Website. You may access and view the content solely for personal, non-commercial
+                    use. You must not:
+                </p>
+                <ul>
+                    <li>Republish, sell, rent, or sub-license any material from the Website.</li>
+                    <li>Reproduce, duplicate, or copy content for commercial purpose</li>
+                    <li>Redistribute Website content without explicit authorization.</li>
+                </ul>
+
+                <h2>5. User-Generated Content (Comments)</h2>
+                <p>If you post comments or other content on our Website:
+                </p>
+                <ul>
+                    <li><strong>No Prior Screening:</strong> Comments reflect the views of the individual author and do
+                        not necessarily represent those of the Company.
+                    </li>
+                    <li><strong>Right to Remove:</strong> We reserve the right to remove any content deemed
+                        inappropriate, offensive, or in violation of these Terms.</li>
+                    <li><strong>Your Warranty:</strong> By posting, you warrant that you have the right to do so and
+                        that your content does not infringe any third-party rights, is not defamatory or unlawful, and
+                        does not promote spam or illegal activities.</li>
+                    <li><strong> License to Use:</strong> You grant Ashton Global Services LLC a non-exclusive license
+                        to use, reproduce, edit, and distribute your content in any media or format.</li>
+                </ul>
+
+                <h2>6. Hyperlinking to Our Content</h2>
+                <h3>6.1. Permissible Links</h3>
+                <p>The following organizations may link to our Website without prior approval:
+                </p>
+                <ul>
+                    <li>Government agencies</li>
+                    <li>Search engines</li>
+                    <li>News organizations</li>
+                    <li>Online directories listing similar businesses</li>
+                </ul>
+
+                <h3>6.2 Link Requests</h3>
+                <p>We may consider link requests from reputable organizations (e.g., educational institutions,
+                    consumer/business information sources). Such requests must not harm our reputation or violate any
+                    laws and should be contextually relevant. To request a link, email us at
+                    info@ashtonglobalservices.com with your name, organization, contact details, and the URLs you intend
+                    to link from/to. Please allow 2–3 weeks for a response.</p>
+
+                <h3>6.3 Approved Links</h3>
+                <p>
+                    Approved links must use our corporate name, the exact URL, or an accurate description and must not
+                    use our logo or artwork without a separate trademark license agreement.
+                </p>
+
+
+                <h2>7. iFrames</h2>
+                <p>You may not create frames around our webpages that alter their visual presentation or appearance
+                    without prior written consent from us
+                </p>
+
+                <h2>8. Content Liability</h2>
+                <p>
+                    We are not responsible for content on third-party websites that link to or from our Website. You
+                    agree to defend and hold us harmless from any claims arising from the content on your site. No link
+                    on your site should be libelous, obscene, or infringe upon third-party rights.
+                </p>
+
+                <h2>9. Reservation of Rights</h2>
+                <p>We reserve the right to request the removal of any or all links to our Website at any time and to
+                    amend these Terms or our linking policy without prior notice. Continuing to link to our Website
+                    constitutes acceptance of any updated Terms.</p>
+
+                <h2>10. Removal of Links</h2>
+                <p>
+                    If you find any link on our Website that you consider offensive or harmful, please notify us at <a
+                        href="mailto:info@ashtonglobalservices.com">info@ashtonglobalservices.com</a> We will review
+                    your request, but we are not obligated to remove the link or respond directly.
+                </p>
+
+                <h2>11. Disclaimer</h2>
+                <p>We do not guarantee the accuracy, completeness, or availability of our Website. To the fullest extent
+                    permitted by law, we exclude all warranties related to the use of our Website and are not liable for
+                    any loss or damage arising from its use.</p>
+
+                <h2>12. Liability Limitations</h2>
+                <p>Nothing in these Terms will:</p>
+                <ul>
+                    <li>Limit or exclude liability for death or personal injury resulting from negligence.</li>
+                    <li>Limit or exclude liability for fraud or fraudulent misrepresentation.</li>
+                    <li> Exclude any liability that cannot be excluded under applicable law.
+                    </li>
+                </ul>
+
+                <h2>13. Force Majeure</h2>
+                <p>Neither party shall be liable for any failure to perform its obligations due to events beyond its
+                    reasonable control, including natural disasters, government actions, labor disputes, or other force
+                    majeure events.</p>
+
+                <h2>14. Indemnification</h2>
+                <p>
+                    You agree to indemnify, defend, and hold harmless Ashton Global Services LLC, its officers,
+                    employees, and agents from any claims, losses, damages, liabilities, and expenses (including
+                    reasonable attorneys’ fees) arising out of or in connection with your use of our Website, breach of
+                    these Terms, or violation of any law or rights of any third party.
+
+                </p>
+                <h2>15. Dispute Resolution</h2>
+                <p>Any dispute arising under or in connection with these Terms shall be resolved through binding
+                    arbitration in accordance with the rules of the applicable arbitration forum in the jurisdiction
+                    where Ashton Global Services LLC is headquartered or as mutually agreed. This provision does not
+                    preclude you from seeking injunctive or other equitable relief as necessary. </p>
+
+                <h2>16. Governing Law</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of the United States and
+                    Pakistan, without regard to any conflict of law principles.</p>
+
+                <h2>17. Changes to These Terms</h2>
+                <p> We may update or revise these Terms at any time. The revised Terms will be posted on this page with
+                    an updated “Last Updated” date. Your continued use of our Website after such updates constitutes
+                    acceptance of the revised Terms.
+                </p>
+
+                <h2>18. Our Services</h2>
+                <p>Ashton Global Services LLC offers a comprehensive suite of digital solutions to help revolutionize
+                    your business. Our services are provided in accordance with applicable U.S. and Pakistani laws and
+                    include, but are not limited to:
+                </p>
+                <ul>
+                    <li><strong>Web Development:</strong> Custom web development, E-commerce development, WordPress and
+                        Shopify solutions, Website redesign.</li>
+
+                    <li><strong>Mobile App Development:</strong> Custom mobile apps, cross-platform development, app
+                        maintenance, UI/UX design, and optimization. </li>
+
+                    </li> <strong>E-Commerce Solutions: </strong>Custom e-commerce platforms, payment gateway
+                    integration, e-commerce app development, product management systems, analytics.</li>
+
+                    <li><strong> License to Use:</strong> You grant Ashton Global Services LLC a non-exclusive license
+                        to use, reproduce, edit, and distribute your content in any media or format.</li>
+
+                    <li><strong>Digital Marketing & SEO:</strong> On-page and off-page SEO, local SEO, PPC management,
+                        content marketing, and SEO audits</li>
+
+                    <li><strong>Custom Software Solutions:</strong> Bespoke business software, CRM and ERP development,
+                        API integrations, cloud-based solutions.
+                    </li>
+
+                    <li><strong>Social Media Marketing: </strong> Strategy development, social media advertising,
+                        content creation, community management, influencer marketing.</li>
+
+                    <li><strong>Video Marketing & Branding:
+                        </strong> Explainer videos, brand storytelling, product demos, video ads, and social media
+                        clips.</li>
+
+                    <li><strong>Email Marketing & Automation:
+                        </strong>Campaign management, marketing automation, lead generation, list segmentation, and A/B
+                        testing.</li>
+                </ul>
+                <p>All service engagements are subject to these Terms and may be further governed by additional
+                    project-specific agreements.</p>
+
+                <h2>19. Contact Information</h2>
+                <p> For any questions or concerns regarding these Terms, please contact us at: <br>
+                    <strong>Email:</strong> <a
+                        href="mailto:info@ashtonglobalservices.com">info@ashtonglobalservices.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+ 
+ 
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <a href="/" class="flex justify-center items-center gap-1.5 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-globe text-white">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                                <path d="M2 12h20" />
+                            </svg>
+                            <span class="text-3xl text-white font-roboto">Ashton Global</span>
+                        </a>
+                    </div>
+                    <p class="text-gray-200 sm:pr-6 tracking-wider text-sm">
+                        Revolutionizing your business with bold, innovative digital solutions that drive exponential
+                        growth, ignite operational efficiency, and unlock limitless potential—empowering you to thrive
+                        in an ever-evolving digital world.
+                    </p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-200">Services</h4>
+                    <ul class="space-y-2">
+                        <li><button
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Web
+                                Development</button></li>
+                        <li><button
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">App
+                                Development</button></li>
+                        <li><button
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Custom
+                                Software Development</button></li>
+                        <li><button
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Digital
+                                Marketing</button></li>
+                    </ul>
+                </div>
+
+                <!-- Pages -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gray-200">Pages</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/"
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Home</a>
+                        </li>
+                        <li><a href="#about"
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">About</a>
+                        </li>
+                        <li><a href="#services"
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Services</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Contact
+                                Us</a></li>
+                        <li><a href="/privacy_policy.html"
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Privacy
+                                Policy</a></li>
+                        <li><a href="/TermCondtions.html"
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Terms
+                                & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-200">Contact</h4>
+                    <div class="space-y-4">
+                        <div
+                            class="flex items-center cursor-pointer text-gray-400 hover:text-indigo-600 transition-transform transform hover:scale-105">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-indigo-400"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
+                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                            <a class="text-sm hover:text-indigo-500"
+                                href="mailto:info@ashtonglobalservices.com">info@ashtonglobalservices.com</a>
+                        </div>
+                        <div
+                            class="flex items-center text-gray-400 cursor-pointer hover:text-indigo-600 transition-transform transform hover:scale-105">
+                            <svg class="w-5 h-5 mr-2 text-indigo-400" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <a href="tel:+13022194856" class="text-sm hover:text-indigo-500">(302) 219-4856</a>
+                        </div>
+                        <div
+                            class="flex items-center text-gray-400 cursor-pointer hover:text-indigo-600 transition-transform transform hover:scale-105">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-indigo-400 "
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span class="text-sm hover:text-indigo-500">30 N. Gould St. Ste N, Sheridan, WY 82801</span>
+                        </div>
+                        <div
+                            class="flex items-center text-gray-400 cursor-pointer hover:text-indigo-600 transition-transform transform hover:scale-105">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-indigo-400 "
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span class="text-sm hover:text-indigo-500">75 Weldbrick Rd, E Unit 701, Richmond Hill, On
+                                L4C 0H9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024-25 Ashton Global Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

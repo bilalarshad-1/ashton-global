@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashton Global Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/lucide-react@0.22.0/dist/lucide.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 ">
+
+    <!-- navbar -->
+    <nav class="fixed w-full bg-white backdrop-blur-sm z-50 border-b border-gray-200 font-roboto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-5 lg:px-4 py-2">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="/" class="text-indigo-500 flex justify-center items-center gap-1.5 font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-globe text-indigo-500">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                            <path d="M2 12h20" />
+                        </svg>
+                        <span class="text-3xl text-indigo-500 font-roboto">Ashton Global</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/"
+                        class="text-indigo-900 hover:text-indigo-500 transition hover:-translate-y-2 duration-300">Home</a>
+                    <a href="#about"
+                        class="text-indigo-900 hover:text-indigo-500 transition hover:-translate-y-1 duration-300">About</a>
+                    <a href="#services"
+                        class="text-indigo-900 hover:text-indigo-500 transition hover:-translate-y-1 duration-300">Services</a>
+                    <a href="#contact"
+                        class="text-indigo-900 hover:text-indigo-500 transition hover:-translate-y-1 duration-300">Contact</a>
+                </div>
+
+                <!-- Hamburger Menu (for mobile) -->
+                <button id="hamburgerBtn" class="md:hidden flex text-gray-700">
+                    <img id="hamburgerIcon" src="assets/icons/menu.png" class="w-6" alt="Hamburger Menu">
+                    <span id="closeIcon" class="hidden w-12 text-xl font-bold">X</span>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default, shown when hamburger is clicked) -->
+        <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-white">
+                <a href="#home"
+                    class="block px-3 py-2 text-indigo-900 hover:text-indigo-500 transition duration-300">Home</a>
+                <a href="#about"
+                    class="block px-3 py-2 text-indigo-900 hover:text-indigo-500 transition duration-300">About</a>
+                <a href="#services"
+                    class="block px-3 py-2 text-indigo-900 hover:text-indigo-500 transition duration-300">Services</a>
+                <a href="#contact"
+                    class="block px-3 py-2 text-indigo-900 hover:text-indigo-500 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-4/5 bg-cover bg-center" style="background-image: url('assets/images/hero-bg.avif');">
+        <div class="absolute bg-gradient-to-br from-indigo-50 via-purple-50 to-white w-full h-full opacity-75"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-64 pb-52">
+            <div class="text-center">
+                <h1
+                    class="text-3xl font-roboto md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-6 font-['Inter']">
+                    Let’s Build Something Extraordinary Together
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-4xl mx-auto font-light">
+                    We create stunning websites, build next-gen mobile apps, and deliver custom software solutions to
+                    transform your business. With data-driven digital marketing strategies, we help you connect, engage,
+                    and grow in the digital age.
+                </p>
+                <a href="#contact"
+                    class="font-roboto inline-flex items-center gap-1 px-6 py-3 border border-transparent text-lg font-medium rounded-2xl text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-300 font-medium">
+                    Get in touch
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-arrow-right">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- {/* About Section */} -->
+    <section id="about" class="py-16 md:py-24 bg-gradient-to-br from-gray-100 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2
+                    class="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-4 font-roboto">
+                    About Us
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Innovative IT solutions to tackle your digital challenges—websites, apps, and marketing strategies
+                    that drive growth and success.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="relative group about-img rounded-2xl">
+                    <!-- <div
+                        class="absolute about-img rounded-2xl opacity-20 group-hover:opacity-30 blur transition duration-300">
+                    </div> -->
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800"
+                        alt="Modern office space" class="relative rounded-2xl shadow-xl" />
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 font-roboto text-indigo-500">
+                        Your Trusted Partner in
+                        Digital Transformation
+                    </h3>
+                    <p class="text-gray-600 mb-6">
+                        At Ashton Global Services, we combine cutting-edge technology with creative innovation
+                        to deliver transformative digital solutions. Our team of experts brings years of experience
+                        in software development, digital marketing, and business strategy to help your organization
+                        thrive
+                        in the digital age.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-indigo-600 font-semibold">
+                            <span class="h-6 w-6  mr-2 text-indigo-800">✓</span>
+                            Industry-leading development team
+                        </li>
+                        <li class="flex items-center text-indigo-600 font-semibold">
+                            <span class="h-6 w-6 mr-2 text-indigo-800">✓</span>
+                            Award-winning digital marketing strategies
+                        </li>
+                        <li class="flex items-center text-indigo-600 font-semibold">
+                            <span class="h-6 w-6  mr-2 text-indigo-800">✓</span>
+                            Innovative software solutions
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2
+                    class="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-4 font-roboto">
+                    Our Services
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive digital solutions designed to elevate your business, improve user engagement, and
+                    drive growth.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div id="servicesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+                <!-- Dynamically generated services will go here -->
+            </div>
+        </div>
+
+        <!-- Services Modal -->
+        <div id="portfolioModal"
+            class="fixed z-30 inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+            <div class="bg-white p-8 rounded-lg w-11/12 md:w-1/2 relative">
+                <button id="closeModal" class="absolute top-4 right-4 text-indigo-600 font-bold text-2xl">X</button>
+                <div>
+                    <div id="modalIcon" class="h-12 w-12 text-[#1bce8c] mb-4"></div>
+                    <h2 class="text-xl font-bold my-2 font-roboto text-indigo-600" id="modalTitle">Service Title</h2>
+                    <p id="modalDescription" class="text-gray-700 text-base my-2">Description of the service goes
+                        here.</p>
+                    <h4 class="text-lg font-semibold my-1 font-roboto text-indigo-600 ">Key Features:</h4>
+                    <ul id="modalFeatures" class="ml-4 mt-2 mb-3 list-disc font-semibold ">
+                        <!-- Dynamic list items will go here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-20 bg-gradient-to-b from-gray-100 to-gray-50">
+        <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+            <div class="text-center mb-9">
+                <h2
+                    class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-4 font-roboto">
+                    Get in Touch
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    Have questions? We'd love to hear from you! Fill out the form below and we'll get back to you as
+                    soon as possible.
+                </p>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-white shadow-lg rounded-2xl p-8 md:p-10">
+                <!-- Form action points to Formspree endpoint -->
+                <form id="contactForm" action="https://formspree.io/f/mdkeoqpo" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name"
+                            class="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                            required />
+                        <p id="nameError" class="text-red-600 text-sm mt-1 hidden">Name is required.</p>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email"
+                            class="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                            required />
+                        <p id="emailError" class="text-red-600 text-sm mt-1 hidden">Valid email is required.</p>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                            class="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                            required></textarea>
+                        <p id="messageError" class="text-red-600 text-sm mt-1 hidden">Message is required.</p>
+                    </div>
+                    <div class="flex justify-center space-x-3">
+                        <input type="checkbox" id="consent" name="consent" required
+                            class="h-5 w-5 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" />
+                        <span for="consent" class="text-sm text-gray-700 font-roboto">
+                            By submitting this form, you consent to receive marketing emails, SMS messages, and other
+                            communications from Ashton Global Services. You can opt-out at any time by clicking the
+                            "unsubscribe" link in any email we send, or by texting "STOP" to opt-out of SMS. We respect
+                            your privacy and will not share your information with third parties without your consent.
+                        </span>
+                        <p id="consentError" class="text-red-600 text-sm mt-1 hidden">Consent is required.</p>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="submit"
+                            class="px-6 py-3 font-roboto text-lg font-medium rounded-xl text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 shadow-md hover:shadow-lg transition-all duration-300 w-full sm:w-auto">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="successModal" class="fixed inset-0 flex items-center justify-center hidden bg-black bg-opacity-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-2xl font-bold text-indigo-500">Success!</h3>
+            <p class="text-gray-700 mt-2">Your message has been sent successfully.</p>
+            <button onclick="closeModal('successModal')"
+                class="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 duration-300">Close</button>
+        </div>
+    </div>
+
+    <div id="errorModal" class="fixed inset-0 flex items-center justify-center hidden bg-black/90 bg-opacity-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-2xl font-bold text-red-600">Error!</h3>
+            <p class="text-gray-700 mt-2">Something went wrong. Please try again.</p>
+            <button onclick="closeModal('errorModal')"
+                class="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <a href="/" class="flex justify-center items-center gap-1.5 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-globe text-white">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                                <path d="M2 12h20" />
+                            </svg>
+                            <span class="text-3xl text-white font-roboto">Ashton Global</span>
+                        </a>
+                    </div>
+                    <p class="text-gray-200 sm:pr-6 tracking-wider text-sm">
+                        Revolutionizing your business with bold, innovative digital solutions that drive exponential
+                        growth, ignite operational efficiency, and unlock limitless potential—empowering you to thrive
+                        in an ever-evolving digital world.
+                    </p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-200">Services</h4>
+                    <ul class="space-y-2">
+                        <li><button
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Web
+                                Development</button></li>
+                        <li><button
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">App
+                                Development</button></li>
+                        <li><button
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Custom
+                                Software Development</button></li>
+                        <li><button
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Digital
+                                Marketing</button></li>
+                    </ul>
+                </div>
+
+                <!-- Pages -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gray-200">Pages</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/"
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Home</a>
+                        </li>
+                        <li><a href="#about"
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">About</a>
+                        </li>
+                        <li><a href="#services"
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Services</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Contact
+                                Us</a></li>
+                        <li><a href="/privacy_policy.html"
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Privacy
+                                Policy</a></li>
+                        <li><a href="/TermCondtions.html"
+                                class="text-gray-300 hover:text-indigo-500 transition duration-300 transform hover:translate-x-2">Terms
+                                & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-200">Contact</h4>
+                    <div class="space-y-4">
+                        <div
+                            class="flex items-center cursor-pointer text-gray-400 hover:text-indigo-600 transition-transform transform hover:scale-105">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-indigo-400"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
+                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                            <a class="text-sm hover:text-indigo-500"
+                                href="mailto:info@ashtonglobalservices.com">info@ashtonglobalservices.com</a>
+                        </div>
+                        <div
+                            class="flex items-center text-gray-400 cursor-pointer hover:text-indigo-600 transition-transform transform hover:scale-105">
+                            <svg class="w-5 h-5 mr-2 text-indigo-400" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <a href="tel:+13022194856" class="text-sm hover:text-indigo-500">(302) 219-4856</a>
+                        </div>
+                        <div
+                            class="flex items-center text-gray-400 cursor-pointer hover:text-indigo-600 transition-transform transform hover:scale-105">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-indigo-400 "
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span class="text-sm hover:text-indigo-500">30 N. Gould St. Ste N, Sheridan, WY 82801</span>
+                        </div>
+                        <div
+                            class="flex items-center text-gray-400 cursor-pointer hover:text-indigo-600 transition-transform transform hover:scale-105">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-indigo-400 "
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span class="text-sm hover:text-indigo-500">75 Weldbrick Rd, E Unit 701, Richmond Hill, On
+                                L4C 0H9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024-25 Ashton Global Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Cookie Banner -->
+    <div id="consent-popup"
+        class="fixed bottom-0 max-w-full w-full bg-white shadow-2xl p-4 border border-gray-300 flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-0">
+        <div class="text-gray-800 text-sm w-full lg:w-7/12">
+            <p class="sm:text-lg text-base font-normal">
+                <span class="mr-1">🍪</span>
+                Your experience matters! We use cookies to enhance your journey. Adjust your preferences or accept all
+                for a seamless experience.
+            </p>
+        </div>
+        <div class="flex gap-2">
+            <button id="accept-all"
+                class="px-2 sm:px-4 py-2 text-sm md:text-base font-medium rounded-xl text-white bg-green-500 hover:bg-green-600 shadow-lg hover:shadow-xl transition-all">
+                Accept All
+            </button>
+            <button id="manage-cookies"
+                class="px-2 sm:px-4 py-2 text-sm md:text-base font-medium rounded-xl text-white bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all">
+                Manage Preferences
+            </button>
+            <button id="reject-non-essential"
+                class="px-2 sm:px-4 py-2 text-sm md:text-base font-medium rounded-xl text-white bg-red-500 hover:bg-red-600 shadow-lg hover:shadow-xl transition-all">
+                Reject non-essential
+            </button>
+        </div>
+    </div>
+
+    <!-- Manage Preferences Modal -->
+    <div id="cookie-modal"
+        class="fixed inset-0 bg-gray-900 bg-opacity-75 backdrop-blur-md flex items-center justify-center hidden animate-fade-in">
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-2xl w-[90%] max-w-md transform transition-all scale-95">
+            <h2 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+                🍪 Manage Cookie Preferences
+            </h2>
+            <p class="text-gray-600 text-sm mt-2 leading-relaxed">
+                We use cookies to improve our services. Select the categories you want to allow and save your choices.
+            </p>
+
+            <div class="mt-5 space-y-4">
+                <!-- Essential Cookies (Always Enabled) -->
+                <label class="flex items-center space-x-4 p-3 bg-gray-100 rounded-lg cursor-not-allowed opacity-60">
+                    <input type="checkbox" checked disabled class="h-6 w-6 text-gray-400 rounded-md">
+                    <span class="text-gray-800 text-md">Essential Cookies (Required for functionality)</span>
+                </label>
+
+                <!-- Performance & Analytics Cookies -->
+                <label class="flex items-center space-x-4 p-3 bg-gray-100 rounded-lg cursor-pointer hover:bg-gray-200">
+                    <input type="checkbox" id="performance-cookies"
+                        class="h-6 w-6 text-blue-600 rounded-md focus:ring-2 focus:ring-blue-400">
+                    <span class="text-gray-800 text-md">Performance & Analytics Cookies</span>
+                </label>
+
+                <!-- Functional Cookies -->
+                <label class="flex items-center space-x-4 p-3 bg-gray-100 rounded-lg cursor-pointer hover:bg-gray-200">
+                    <input type="checkbox" id="functional-cookies"
+                        class="h-6 w-6 text-blue-600 rounded-md focus:ring-2 focus:ring-blue-400">
+                    <span class="text-gray-800 text-md">Functional Cookies (User Experience Enhancements)</span>
+                </label>
+
+                <!-- Personalization & AI Cookies -->
+                <label class="flex items-center space-x-4 p-3 bg-gray-100 rounded-lg cursor-pointer hover:bg-gray-200">
+                    <input type="checkbox" id="ai-cookies"
+                        class="h-6 w-6 text-blue-600 rounded-md focus:ring-2 focus:ring-blue-400">
+                    <span class="text-gray-800 text-md">Personalization & AI Cookies (Tailored Recommendations)</span>
+                </label>
+
+                <!-- Advertising & Tracking Cookies -->
+                <label class="flex items-center space-x-4 p-3 bg-gray-100 rounded-lg cursor-pointer hover:bg-gray-200">
+                    <input type="checkbox" id="advertising-cookies"
+                        class="h-6 w-6 text-blue-600 rounded-md focus:ring-2 focus:ring-blue-400">
+                    <span class="text-gray-800 text-md">Advertising & Tracking Cookies</span>
+                </label>
+            </div>
+
+            <div class="mt-6 flex justify-end space-x-3">
+                <button id="close-modal"
+                    class="px-5 py-3 text-md font-medium bg-gray-300 hover:bg-gray-400 text-gray-900 rounded-xl transition-all">
+                    Close
+                </button>
+                <button id="save-preferences"
+                    class="px-5 py-3 text-md font-medium text-white bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                    Save Preferences
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
