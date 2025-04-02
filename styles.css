@@ -111,10 +111,6 @@ a.active {
     font-weight:bolder;
 }
 
-
-
-
-
 /* Modal Styles */
 .modal {
     display: none;
@@ -156,7 +152,9 @@ a.active {
     background: #000000a3;
   }
 
-
-
-
-  /* cookies styling */
+/* cookies styling */
+/* #consent-popup {
+    display: none;
+    opacity: 0;
+    transition: opacity 1.2s ease-in;
+} */

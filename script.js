@@ -285,5 +285,8 @@ window.onload = () => {
         }
     });
     
-    
+    // Show cookie consent popup after 1.2 seconds
+    // setTimeout(() => {
+    //     consentPopup.classList.remove('hidden');
+    // }, 1200);
 };

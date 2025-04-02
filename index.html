@@ -232,10 +232,7 @@
                         <input type="checkbox" id="consent" name="consent" required
                             class="h-5 w-5 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" />
                         <span for="consent" class="text-sm text-gray-700 font-roboto">
-                            By submitting this form, you consent to receive marketing emails, SMS messages, and other
-                            communications from Ashton Global Services. You can opt-out at any time by clicking the
-                            "unsubscribe" link in any email we send, or by texting "STOP" to opt-out of SMS. We respect
-                            your privacy and will not share your information with third parties without your consent.
+                            By checking this box you agree to receive recurring messages from Ashton Global Services LLC, Reply STOP to Opt out. Reply HELP for help. Message frequency varies. Message and data rates may apply. Carriers are not liable for delayed or undelivered messages. No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All OPT-IN requests include text messaging originator opt-in data and consent; this information will not be shared with third parties.
                         </span>
                         <p id="consentError" class="text-red-600 text-sm mt-1 hidden">Consent is required.</p>
                     </div>
@@ -354,6 +351,17 @@
                                 href="mailto:info@ashtonglobalservices.com">info@ashtonglobalservices.com</a>
                         </div>
                         <div
+                            class="flex items-center cursor-pointer text-gray-400 hover:text-indigo-600 transition-transform transform hover:scale-105">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-indigo-400"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
+                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                            <a class="text-sm hover:text-indigo-500"
+                                href="mailto:info@ashtonglobalservices.com">ashtonglobalservices@gmail.com</a>
+                        </div>
+                        <div
                             class="flex items-center text-gray-400 cursor-pointer hover:text-indigo-600 transition-transform transform hover:scale-105">
                             <svg class="w-5 h-5 mr-2 text-indigo-400" xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -361,11 +369,11 @@
                                 <path
                                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                             </svg>
-                            <a href="tel:+13022194856" class="text-sm hover:text-indigo-500">(302) 219-4856</a>
+                            <a href="tel:+13022194856" class="text-sm hover:text-indigo-500">(717) 928-9599</a>
                         </div>
                         <div
                             class="flex items-center text-gray-400 cursor-pointer hover:text-indigo-600 transition-transform transform hover:scale-105">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-indigo-400 "
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 text-indigo-400 "
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
                                 <path
@@ -376,7 +384,7 @@
                         </div>
                         <div
                             class="flex items-center text-gray-400 cursor-pointer hover:text-indigo-600 transition-transform transform hover:scale-105">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-indigo-400 "
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 mr-2 text-indigo-400 "
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
                                 <path
@@ -400,26 +408,26 @@
 
     <!-- Cookie Banner -->
     <div id="consent-popup"
-        class="fixed bottom-0 max-w-full w-full bg-white shadow-2xl p-4 border border-gray-300 flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-0">
-        <div class="text-gray-800 text-sm w-full lg:w-7/12">
-            <p class="sm:text-lg text-base font-normal">
+        class="fixed bottom-0 max-w-full w-full bg-gray-100/85 shadow-2xl p-2.5 border border-gray-300 flex flex-row items-baseline gap-4 md:gap-0">
+        <div class="text-gray-800 text-sm w-full lg:w-1/1 flex items-center flex-wrap gap-5">
+            <p class="sm:text-base text-sm font-normal ">
                 <span class="mr-1">🍪</span>
                 Your experience matters! We use cookies to enhance your journey. Adjust your preferences or accept all
                 for a seamless experience.
             </p>
+            <button id="accept-all"
+                class="px-2 sm:px-4 py-2 text-sm font-medium rounded-xl text-white bg-indigo-600 hover:bg-indigo-700 shadow-lg hover:shadow-xl transition-all">
+                Accept
+            </button>
         </div>
         <div class="flex gap-2">
-            <button id="accept-all"
-                class="px-2 sm:px-4 py-2 text-sm md:text-base font-medium rounded-xl text-white bg-green-500 hover:bg-green-600 shadow-lg hover:shadow-xl transition-all">
-                Accept All
-            </button>
-            <button id="manage-cookies"
+
+            <!-- <button id="manage-cookies"
                 class="px-2 sm:px-4 py-2 text-sm md:text-base font-medium rounded-xl text-white bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all">
                 Manage Preferences
-            </button>
-            <button id="reject-non-essential"
-                class="px-2 sm:px-4 py-2 text-sm md:text-base font-medium rounded-xl text-white bg-red-500 hover:bg-red-600 shadow-lg hover:shadow-xl transition-all">
-                Reject non-essential
+            </button> -->
+            <button id="reject-non-essential" class="text-gray-700  font-bold text-xl ">
+                X
             </button>
         </div>
     </div>
